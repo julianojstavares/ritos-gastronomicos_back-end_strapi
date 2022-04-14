@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pratos",
+  "info": {
+    "singularName": "prato",
+    "pluralName": "pratos",
+    "displayName": "Pratos"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 1
+    },
+    "Descricao": {
+      "type": "text",
+      "minLength": 1,
+      "required": true
+    },
+    "Preco": {
+      "default": 0,
+      "min": 0,
+      "required": true,
+      "type": "decimal"
+    }
+  }
+}
